@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Update import statement
 import './App.css';
+import Account from './components/account/Account';
+import Sidebar from './components/sidebar/Sidebar';
+import SuraqJauap from './components/suraq-jauap/SuraqJauap';
+import MaqalDrop from './components/maqal-drop/MaqalDrop';
+import Sozjumbaq from './components/sozjumbaq/Sozjumbaq';
+import Tanda from './components/tanda/Tanda';
+import Sozdly from './components/sozdly/Sozdly';
+import Home from './components/home/Home';
+import Adamzat from './components/adamzat/Adamzat';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+
+        <div className='content'>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/sozdly" element={<Sozdly />} />
+            <Route path="/tanda" element={<Tanda />} />
+            <Route path="/maqalDrop" element={<MaqalDrop />} />
+            <Route path="/suraqJauap" element={<SuraqJauap />} />
+            <Route path="/sozjumbaq" element={<Sozjumbaq />} />
+            <Route path="/adamzat" element={<Adamzat />} />
+          </Routes>
+          
+          <Account />
+        </div>
+      </div>
+    </Router>
   );
 }
 
