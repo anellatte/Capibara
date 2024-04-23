@@ -1,0 +1,35 @@
+.sozjumbaq-container {
+  text-align: center;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-item {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.grid-item.blue {
+  background-color: blue;
+}
+
+.grid-item.green {
+  background-color: green;
+}
+
+.grid-item.correct {
+  background-color: green;
+}

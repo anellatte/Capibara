@@ -96,8 +96,6 @@ body {
   background-color: #EEF1F7;
 }
 
-
-
 /* SIDEBAR */
 
 .sidebar {
@@ -428,4 +426,113 @@ body {
 }
 
 
-/* MAQAL DROP */
+/* SIGN UP */
+.signup::before{
+  content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%) rotate(30deg);
+    background-image: linear-gradient(to right, #77E6E6 50%, #F684C2 50%);
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1; /* чтобы гарантировать, что он будет на заднем плане */
+}
+
+.signup__inner{
+  padding: 45px 57px;
+  text-align: center;
+}
+
+.signup-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup__item{
+  flex-basis: 50%;
+}
+
+.signup__subtitle{
+  margin: 0 0 20px;
+  width: auto;
+  border-bottom: 0;
+  display: inline-block;
+}
+
+.text{
+  font-family: "Days One", sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: rgba(48, 46, 72, 0.85);
+  margin-bottom: 30px;
+  
+}
+
+.signup__text{
+  margin-bottom: 0;
+}
+
+.signup__title{
+  width: 500px;
+}
+
+.input{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  padding: 20px 30px;
+  width: 420px;
+  border-radius: 10px;
+
+  background-color: #FDF5F5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button-submit{
+  margin: 17px 0 30px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.button-login{
+  font-size: 19px;
+  color: black;
+}
+
+.link-login{
+  color: black;
+  padding: 10px 60px;
+}
+
+/* SIGN IN */
+.signin::before{
+  content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 60vh;
+    transform: translate(-50%, -50%) rotate(30deg);
+    background-image: linear-gradient(to right, #77E6E6 50%, #F684C2 50%);
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1; /* чтобы гарантировать, что он будет на заднем плане */
+}
+
+.signin__inner{
+  padding: 45px 57px;
+  text-align: center;
+}
+
+.signin-content{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 0;
+}

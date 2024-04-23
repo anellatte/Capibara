@@ -1,0 +1,12 @@
+[
+    {
+        "level": 1,
+        "crossword": [
+            { "clue": "Nature thing often found at high altitudes", "word": "mountain", "hints": ["A in", "P late", "aa P", "schoo L", "l E mon"] },
+            { "clue": "What do you use to serve food", "word": "plate", "hints": ["P late", "l A ksa", "bu T ter", "e G g", "na I f"] },
+            { "clue": "What do you download onto your smartphone for various purposes?", "word": "app", "hints": ["sma R tphone", "mobi L e", "progr A m", "p H one", "so F tware"] },
+            { "clue": "Where do you go to learn and study?", "word": "school", "hints": ["schoo L", "t E acher", "stu D ent", "clas S room", "homewor K "] },
+            { "clue": "What sour fruit is commonly used in cooking and drinks?", "word": "lemon", "hints": ["l E mon", "app L e", "ba N ana", "oran G e", "gra P e"] }
+        ]
+    }
+]

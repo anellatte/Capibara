@@ -29,7 +29,6 @@ const SuraqJauap = () => {
                 setAnswersChecked(false);
             } catch (error) {
                 console.error('Error loading questions:', error.message);
-                // Handle the error, show a user-friendly message, etc.
             }
         };
 
